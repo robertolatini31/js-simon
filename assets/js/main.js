@@ -41,13 +41,16 @@ function askNumbers () {
         inserted[i] = parseInt(prompt('inserisci un numero'));
         //console.log(inserted[i]);
     }
+    let correctWords = 0;
     for(let j = 0; j < 5; j++){ // ciclo che stampa a schermo i risultati
         if(generatedNumbersArray[j] == inserted[j]){
             randomNumbersElement.innerHTML += ` bravo era: ${inserted[j]} `;
+            correctWords++;
         } else  {
             randomNumbersElement.innerHTML += ` hai sbagliato era: ${generatedNumbersArray[j]} `;
         }
     }
+    randomNumbersElement.innerHTML += `   hai indovinato ${correctWords} numeri! `;
 
     //console.log(inserted);
 }
