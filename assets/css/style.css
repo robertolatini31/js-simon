@@ -5,6 +5,7 @@
 }
 
 .container {
+    width: 800px;
     margin: 3rem auto;
     background-color: burlywood;
     border-radius: 20px;
